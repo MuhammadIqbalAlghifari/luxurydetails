@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Clash Regular';
+    src: url('../font/ClashDisplay-Regular.woff2') format('woff2'),
+        url('../font/ClashDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Light';
+    src: url('../font/ClashDisplay-Light.woff2') format('woff2'),
+        url('../font/ClashDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Bold';
+    src: url('../font/ClashDisplay-Bold.woff2') format('woff2'),
+        url('../font/ClashDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Semibold';
+    src: url('../font/ClashDisplay-Semibold.woff2') format('woff2'),
+        url('../font/ClashDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Light';
+    src: url('../font/ClashDisplay-Extralight.woff2') format('woff2'),
+        url('../font/ClashDisplay-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Medium';
+    src: url('../font/ClashDisplay-Medium.woff2') format('woff2'),
+        url('../font/ClashDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    --sb-track-color: #000000;
+    --sb-thumb-color: #ffffff;
+    --sb-size: 14px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 0px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
